@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500&display=swap"
+    rel="stylesheet">
+
+  <!--  
+    You don't need to include "public" in the href path here. This is because app.use(express.static('./public')) in your server code tells Express to serve files from the "public" folder automatically. That means,
+    <link rel="stylesheet" href="../stylesheets/indexCSS.css">
+    will look for "public/stylesheets/indexCSS.css" by default.
+
+    "../" at the start of the file path just means "go up one folder from the current web address."
+    This is needed because the 'stylesheets' folder is not in the same folder as this HTML file.
+    So, "../stylesheets/indexCSS.css" tells the browser: look one level higher, then find "stylesheets/indexCSS.css".
+    It is about how the web address works, not the folder structure on your computer.
+  -->
+  <link rel="stylesheet" href="../stylesheets/indexCSS.css">
+</head>
+
+<body>
+  <nav>
+    <a href="/" class="active">Home</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+  </nav>
+  <main>
+    <h1>Welcome Home</h1>
+    <p class="tagline">A place to rest and dream</p>
+    <p>This is a simple, elegant space built with care. No clutter, no noise—just clarity and warmth.</p>
+    <p>Feel free to explore <a href="/about" class="accent">who we are</a> or <a href="/contact" class="accent">get in
+        touch</a>.</p>
+  </main>
+
+  <script src="../javascripts/indexJS.js"></script>
+
+
+</body>
+
+</html>

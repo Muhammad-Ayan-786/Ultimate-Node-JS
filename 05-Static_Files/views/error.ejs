@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Something Went Wrong</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="/stylesheets/errorCSS.css">
+</head>
+
+<body>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+  </nav>
+  <main>
+    <div class="error-code">
+      500
+    </div>
+    <h1>Something Went Wrong</h1>
+    <p class="error-message">
+      <%= error.message %>
+    </p>
+    <p>We're sorry, but something unexpected happened. Please try again or head back home.</p>
+    <a href="/" class="btn-home">Back to Home</a>
+  </main>
+</body>
+
+</html>

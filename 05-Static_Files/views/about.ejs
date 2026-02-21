@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="../stylesheets/aboutCSS.css">
+
+  <!-- Scroll Bar -->
+  <link rel="stylesheet" href="../stylesheets/scrollBarCSS.css">
+</head>
+
+<body>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about" class="active">About</a>
+    <a href="/contact">Contact</a>
+  </nav>
+  <main>
+    <h1>About Us</h1>
+    <p class="lead">A little story about who we are and what we believe.</p>
+    <p>We value simplicity, craft, and intention. Every line of code and every design choice is made with purpose.</p>
+    <div class="highlight">
+      <p>Hi, <%= typeof name !=='undefined' ? name : 'there' %>! Thanks for stopping by. We're building something
+          meaningful—one step at a time.</p>
+    </div>
+    <p>Whether you're here to learn, collaborate, or simply browse, we're glad you found us. <a href="/contact"
+        class="accent">Say hello</a> anytime.</p>
+  </main>
+
+  <script src="../javascripts/aboutJS.js"></script>
+
+</body>
+
+</html>
